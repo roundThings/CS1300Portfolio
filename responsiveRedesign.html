@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="bootstrap.css" rel="stylesheet">
+    <link href="style.css" , rel="stylesheet">
+    <title>Responsive Redesign</title>
+</head>
+
+<body>
+    <div class="flex-containerPurple justify-content-start">
+        <a href="javascript:history.back()">Back</a>
+    </div>
+
+    <div class="d-flex flex-column justify-content-center align-items-center">
+        <img src="portAssets/7.png" alt="website circle" style="width:30rem;height:auto">
+        <h2>Responsive Redesign</h2>
+        <p class="header">
+            Yan’s Cusine is a popular local restaurant near Brown University known for its quick and cheap takeout (a
+            personal favorite). Students often order directly from the restaurant's website, however, new users often
+            find it challenging to navigate. This project will perform a heuristic analysis of Yan Cusine’s landing page
+            and navigation and propose a new layout to allow better customers to explore the measure and order their
+            meals more efficiently
+        </p>
+        <a href="#Introduction"></a>
+
+    </div>
+
+    <div id="Introduction" class="d-flex flex-column justify-content-center align-items-center">
+        <img id="story" src="portAssets/yans.png" alt="yans" style="width:40%;height:auto">
+        <div class="sectionv2">
+        </div>
+        <p class="header2">
+            <a href="https://www.yansri.com/"> This is the current Yan's Cuisine Page</a>
+        </p>
+        <div class="sectionv2">
+        </div>
+        <h2>How is the current state of Yan's Website?</h2>
+
+    </div>
+
+    <div class="flex-containerInv">
+
+
+        <div class="flex-container2">
+            <div class="boxes justify-content-evenly align-items-center">
+                <h2>Efficiency</h2>
+                <p class="boxed">
+                    1. Text is small and hard to parse effectively <br>
+                    2. Store hours and pick-up are minimized <br>
+                    3. Dishes are categorized too specificly <br>
+                </p>
+            </div>
+        </div>
+
+        <div class="flex-container2">
+            <div class="boxes justify-content-evenly align-items-center">
+                <h2>Learnability</h2>
+                <p class="boxed">
+                    1. Button CTAs are unclear in what they lead to <br>
+                    2. Redundant information gives new users more information to parse through, irrelevant to their main
+                    goal.
+                </p>
+            </div>
+        </div>
+
+        <div class="flex-container2">
+            <div class="boxes justify-content-evenly align-items-center">
+                <h2>Memorability</h2>
+                <p class="boxed">
+                    1. Multiple CTAs indicate multiple flows to order food, which can lead to confusion for
+                    returning users trying to remember how to interact with the website.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="d-flex flex-column justify-content-center align-items-center">
+            <div class="sectionv2">
+            </div>
+            <h2>WAVE Analysis</h2>
+            <p class="header">
+                In terms of accessibility, there is only one main error identified by the WAVE tool which is that the
+                search button is lacking form labels, meaning those who are using certain accessibility devices may not
+                be able to evaluate that specific element. In addition, another concern flagged by WAVE is the type size
+                of all the dish categories, which are all presented on the webpage with fonts 10px or smaller and could
+                make it difficult for hard-of-sight users to parse through the menu.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="section">
+    </div>
+
+    <div class="flex-containerclear text-center justify-content-center">
+        <div class="sectionv2">
+        </div>
+        <h1 class="header">Visual Redesign</h1>
+        <div class="sectionv2">
+        </div>
+        <div class="flex-containerclear justify-content-center align-items-center">
+            <div class="div1">
+                <img src="portAssets/lowFiYans.png" alt="low-fi" style="width:30rem;height:auto">
+                <div class="sectionv2">
+                </div>
+                <p class="boxes2">
+                    I first approached the challenge of redesigning this site with a low-fidelity wireframe across
+                    desktop, tablet, and mobile screen sizes. In particular, since the original website prioritized
+                    online ordering and menu parsing, I expanded the menu. Additionally, since Yan’s is pick-up only,
+                    other high-priority information would be not only the hours but also the location, which was
+                    highlighted in a sidebar. Lastly, because in the original website, clicking into a category would
+                    obscure other menu options, I opted to go with a horizontal tabbed menu for which there is a nested
+                    vertical scroll page -therefore you can both maintain your categorical location in the menu while
+                    also looking at specific items.
+
+                </p>
+            </div>
+
+        </div>
+        <div class="flex-containerclear justify-content-center align-items-center">
+            <div class="div1">
+                <img src="portAssets/designSystem.png" alt="design system" style="width:30rem;height:auto">
+                <div class="sectionv2">
+                </div>
+                <p class="boxes2">
+                    While creating this design system, I tried to consider all the potential button/background states
+                    and organized them into components. In addition, I used Figma plug-ins to check WCAG3 compliance.
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="background">
+        <div class="flex-containerPurple text-center justify-content-center">
+            <div class="sectionv2">
+            </div>
+
+            <h1 class="header">Visual Redesign</h1>
+            <div class="sectionv2">
+            </div>
+
+            <div class="flex-containerPurple justify-content-center align-items-baseline">
+                <div class="div1">
+                    <img src="portAssets/hiFiYans.png" alt="high-fi" style="width:40rem;height:auto">
+                </div>
+            </div>
+
+            <div class="flex-containerPurple justify-content-center align-items-baseline">
+                <div class="div1">
+                    <img src="portAssets/annotated.png" alt="design system" style="width:40rem;height:auto">
+                    <div class="sectionv2">
+                    </div>
+                    <p style="width:40rem;height:auto">
+                        Throughout the process of building the hi-fi prototype, I also annotated the page with
+                        consideration
+                        of how sections would translate into html/css/javascript
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="d-flex flex-column justify-content-center align-items-center">
+        <h2>Static HTML Webpage</h2>
+    </div>
+    <div class="containerz">
+        <iframe class="responsive-iframe" src="https://roundthings.github.io/responsiveRedesign/"
+            title="Yan's Cuisine Redesign"></iframe>
+    </div>
+
+    <div class="d-flex flex-column justify-content-center align-items-center">
+        <p class="header"> <a href="https://roundthings.github.io/responsiveRedesign/">The final site!</a> I had to
+            change
+            some things from the original design because some designs were too hard to implement, but they were
+            primarily visual in nature and did not affect the overall implementation of UX design choices.</p>
+    </div>
+
+
+
+
+
+</body>
+
+</html>
