@@ -7,13 +7,35 @@
 
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: rgb(152, 246, 215);
+    background: linear-gradient(-45deg, #0e2e39, #d26cca, #4589cd, #220031);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+    height: 1000vh;
+}
+
+
+
+/* #back {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-image: url("portAssets/Portfolio Background.png");
+    width: 100%;
+    height: 100%;
+} */
+
+.landing {
+    height: 150vh;
 }
 
 .navebar-item {
     color: aliceblue;
     font-size: 15px;
-    text-align: left;
+    text-align: right;
+}
+
+#navPurple {
+    background-color: #08011500;
+    height: 60px;
+    text-align: right;
 }
 
 .flex-container {
@@ -66,7 +88,6 @@ body {
     justify-items: center;
     align-items: center;
     text-align: center;
-    align-items: baseline;
 }
 
 
@@ -118,6 +139,17 @@ div {
     padding-right: 10px;
     padding-bottom: 15px;
     padding-left: 10px;
+}
+
+.box {
+    width: 500px;
+    height: 250px;
+    max-width: 600px;
+    max-height: 350px;
+    min-width: 250px;
+    background-color: rgb(255, 255, 255);
+    margin: 20px;
+    position: relative;
 }
 
 
@@ -197,4 +229,107 @@ div {
     right: 0;
     width: 100%;
     height: 100%;
+}
+
+#backCover {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transform: scaleX(-1);
+}
+
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.grow {
+    transition: all .2s ease-in-out;
+}
+
+.grow:hover {
+    transform: scale(1.1);
+}
+
+#title {
+    margin-left: 1.5%;
+    margin-top: .5%;
+    justify-content: center;
+    align-items: center;
+}
+
+.animate-charcter {
+    text-transform: uppercase;
+    background-image: linear-gradient(-225deg,
+            #ddff45 0%,
+            #aaffa2 29%,
+            #eff24c 67%,
+            #f6ee00 100%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+    font-size: 150px;
+}
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
+}
+
+.buttonMy {
+    border-radius: 4px;
+    background-color: transparent;
+    border: none;
+    color: rgb(252, 249, 171);
+    text-align: left;
+    font-size: 28px;
+    width: fit-content;
+    padding-left: 15px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.buttonMy span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.buttonMy span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.buttonMy:hover span {
+    padding-right: 25px;
+}
+
+.buttonMy:hover span:after {
+    opacity: 1;
+    right: 0;
 }
