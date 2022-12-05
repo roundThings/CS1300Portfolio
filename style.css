@@ -10,7 +10,6 @@ body {
     background: linear-gradient(-45deg, #0e2e39, #d26cca, #4589cd, #220031);
     background-size: 400% 400%;
     animation: gradient 10s ease infinite;
-    height: 5g00vh;
 }
 
 
@@ -23,8 +22,29 @@ body {
 } */
 
 .landing {
-    height: 150vh;
+    height: 1150px;
 }
+
+.about {
+    height: 1350px;
+}
+
+@media (max-width:1200px) {
+    .landing {
+        height: 800px;
+    }
+
+    .textBoxCenter {
+        font-size: 12px;
+    }
+}
+
+@media (max-width:1300px) {
+    .landing {
+        height: 900px;
+    }
+}
+
 
 .navebar-item {
     color: aliceblue;
@@ -87,6 +107,14 @@ body {
     justify-content: center;
     justify-items: center;
     align-items: center;
+    text-align: left;
+}
+
+.flex-containerInvLeft {
+    display: flex;
+    flex-flow: row wrap;
+    justify-items: left;
+    align-items: center;
     text-align: center;
 }
 
@@ -142,16 +170,16 @@ div {
 }
 
 .box {
-    width: 500px;
+    width: 350px;
     height: 250px;
     max-width: 600px;
     max-height: 350px;
     min-width: 250px;
     background-color: rgb(255, 255, 255);
-    margin: 20px;
+    border-radius: 20px;
+    margin: 30px;
     position: relative;
 }
-
 
 .boxes {
     width: 250px;
@@ -181,6 +209,15 @@ div {
 
 }
 
+.boxInv {
+    justify-content: space-evenly;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    max-width: 25%;
+    height: 450px;
+    padding: 0px;
+    margin: 3%;
+}
 
 .boxed {
     text-align: left;
@@ -332,4 +369,89 @@ div {
 .buttonMy:hover span:after {
     opacity: 1;
     right: 0;
+}
+
+#profile {
+    max-width: 20%;
+    max-height: auto;
+    margin-left: 10%;
+    border-radius: 50%;
+}
+
+#processpics {
+    max-width: 70%;
+    max-height: 70%;
+    align-self: center;
+    margin-left: 13%;
+}
+
+#textBoxMed {
+    max-width: 50%;
+    margin: 5%;
+    text-align: left;
+    color: white;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.textBoxCenter {
+    max-width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-right: 0%;
+    display: inline-block;
+}
+
+
+.sectionHeading {
+    color: rgb(252, 249, 171);
+    font-size: 75px;
+    margin-left: 7%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.h_line {
+    width: 85%;
+    height: 3px;
+    padding: 0px;
+    margin-bottom: 7%;
+    background: #fff;
+    margin-left: 7%;
+}
+
+#process {
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+a.fill-div {
+    display: block;
+    text-decoration: none;
+}
+
+
+.portTextItem {
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#personas {
+    background-image: radial-gradient(rgba(19, 0, 106, 0.626), rgb(15, 77, 143)), url("portAssets/personas.png");
+
+}
+
+#redesign {
+    background-image: radial-gradient(rgba(19, 0, 106, 0.626), rgb(15, 77, 143)), url("portAssets/Redesign.png");
 }
