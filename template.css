@@ -64,6 +64,7 @@ body {
     position: fixed;
     top: 50px;
     left: 20px;
+    z-index: 1000px;
 }
 
 #back {
@@ -84,7 +85,8 @@ body {
     text-transform: uppercase;
     font-weight: 500;
     display: inline-block;
-    width: 80px;
+    width: 200px;
+    text-align: center;
 }
 
 .navMenu a:hover {
@@ -93,4 +95,11 @@ body {
 
 .dot {
     margin-bottom: 3%;
+}
+
+#producebleSide {
+    display: inline;
+    width: 30%;
+    margin: 3%;
+    margin-left: 7%;
 }

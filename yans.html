@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="template.css" , rel="stylesheet">
+    <link href="tangiacss.css" , rel="stylesheet">
+    <link href="style.css" , rel="stylesheet">
+    <title>Yans</title>
+</head>
+
+<body>
+
+
+    <a id="circle" href="./index.html#PROJECTS ">
+        <img id="back" src="portAssets/backButton.png" class="fill-div" alt="back button">
+    </a>
+
+    <div id="pageHeader">
+        <p class="sectionHead">Yan's Cuisine Online Ordering</p>
+        <div class="headLine"></div>
+        <p class="sectionSubtitle">How can we design an effective online menu</p>
+    </div>
+
+
+    <main id="root">
+        <header>
+            <h1>Case Overview</h1>
+            <section>
+                <p>
+                <h2>My Role</h2>
+                UX Designer/Front-end Developer
+                <br>
+                <h2>Background</h2>
+                Yan’s Cuisine is a popular local restaurant near Brown University known for its quick and cheap takeout
+                (a personal favorite). Students often order directly from the restaurant's website, however, new users
+                often find it challenging to navigate. This project will perform a heuristic analysis of Yan Cusine’s
+                landing page and navigation and propose a new layout to allow better customers to explore the measure
+                and order their meals more efficiently
+
+                <h2>Key Project Structure </h2>
+                <ul>
+                    <li>Heuristic Analysis </li>
+                    <li>Accessibility Anaylsis</li>
+                    <li>Wireframing</li>
+                    <li>High-Fidelity Design</li>
+                    <li>Responsive Website</li>
+                </ul>
+
+                <h2> Key Project Outcome </h2>
+                A responsive, high-fidelity re-design of Yan's Cuisine online menu.
+                </p>
+            </section>
+
+        </header>
+
+        <section>
+            <h2>Heuristic Analysis</h2>
+            <h3>Current Yan's Site</h3>
+            <p style="margin-bottom: 5%"> Shown below is the landing page/ordering page of Yan's main website. Using
+                Nielsen Norman's Heuristics
+                guidelines and static testing, I identified 3 main areas of concern with this current webpage. </p>
+            <!-- rounded's sketches -->
+            <figure>
+                <img src='portAssets/yans.png' alt='' />
+                <figcaption>
+                    <p>(<a href='portAssets/yans.png'>enlarge sketch</a>)</p>
+                </figcaption>
+            </figure>
+
+            <h3>Efficiency</h3>
+            <ul>
+                <li>Text is small and hard to parse effectively </li>
+                <li>Store hours and pick-up are minimized </li>
+                <li>Dishes are categorized too specificly</li>
+            </ul>
+
+            <h3>Learnability</h3>
+            <ul>
+                <li>Button CTAs are unclear in what they lead to </li>
+                <li>Redundant information gives new users more information to parse through, irrelevant to their
+                    main
+                    goal</li>
+            </ul>
+
+            <h3>Memorability</h3>
+            <ul>
+                <li> Multiple CTAs indicate multiple flows to order food, which can lead to confusion for
+                    returning users trying to remember how to interact with the website</li>
+            </ul>
+
+        </section>
+        <section>
+            <h2>W.A.V.E Analysis</h2>
+            <p>
+                In terms of accessibility, there is only one main error identified by the WAVE tool which is that
+                the search button is lacking form labels, meaning those who are using certain accessibility devices
+                may not be able to evaluate that specific element. In addition, another concern flagged by WAVE
+                is the type size of all the dish categories, which are all presented on the webpage with fonts
+                10px or smaller and could make it difficult for hard-of-sight users to parse through the menu.
+
+            </p>
+        </section>
+
+
+        <section>
+            <h2>Wireframes</h2>
+            <p>
+                I first approached the challenge of redesigning Yan's online menu with two main issues in mind: the
+                aforementioned usability findings, and to make the new design responsive
+                across desktop, tablet, and mobile screen sizes. In particular, since the original website prioritized
+                online ordering
+                and menu parsing, I expanded the menu. <br>
+            </p>
+            <figure>
+                <img src='portAssets/lowFiYans.png' alt='' />
+                <figcaption>
+                    <p>(<a href='portAssets/lowFiYans.png'>enlarge sketch</a>)</p>
+                </figcaption>
+            </figure>
+            <p> The original website prioritized online ordering and menu parsing, however the layout was too cramped to
+                be effective, therefore I expanded the
+                menu. Additionally, since Yan’s is pick-up only, other high-priority information would be not only the
+                hours but also the location, which was highlighted in a sidebar. Lastly, because in the original
+                website, clicking into a category would obscure other menu options, I opted to go with a horizontal
+                tabbed menu for which there is a nested vertical scroll page -therefore you can both maintain your
+                categorical location in the menu while also looking at specific items.</p>
+        </section>
+
+        <section>
+            <h2>High-Fidelity</h2>
+            <h3>Design System</h3>
+            <p>
+                I first appproched creating my hi-fi design by with creating a design system and base components
+                identified in my lo-fi wireframe.
+            </p>
+            <figure>
+                <img src='portAssets/designSystemYans.png' alt='' />
+                <figcaption>
+                    <p>(<a href='portAssets/designSystemYans.png'>enlarge sketch</a>)</p>
+                </figcaption>
+            </figure>
+            <h3>Completed Hi-Fi</h3>
+            <p> After I created my design system, I built out the 3 main viewing ratios. Throughout this process, I also
+                annotated the page with consideration of how sections would translate into html/css/javascript</p>
+            <figure>
+                <img src='portAssets/hiFiYans.png' alt='' />
+                <figcaption>
+                    <p>(<a href='portAssets/hiFiYans.png'>enlarge sketch</a>)</p>
+                </figcaption>
+            </figure>
+
+        </section>
+
+        <section>
+            <h2>Static HTML Webpage</h2>
+            <p>Using html/css and the hi-fi Figma annotations, I coded the <a
+                    href="https://roundthings.github.io/responsiveRedesign/">the final site </a>and launched it.</p>
+        </section>
+
+    </main>
+
+    <div class="flex-containerInv">
+        <div class="containerz">
+            <iframe class="responsive-iframe" src="https://roundthings.github.io/responsiveRedesign/"
+                title="Yan's Cuisine Redesign"></iframe>
+        </div>
+    </div>
+
+    <div class="flex-containerInv">
+        <nav class="navMenu">
+            <div class="flex-containerInv">
+                <div class="dot"></div>
+                <a href="iterativeRedesign.html">Produceble</a>
+                <a href="yans.html">Yan's</a>
+                <a href="iterativeRedesign.html">Tangia</a>
+                <a href="menu.html">Menu Study</a>
+                <div class="dot"></div>
+            </div>
+        </nav>
+    </div>
+
+</body>
