@@ -50,7 +50,7 @@ a.nav-link:active {
 }
 
 .about {
-    height: 1350px;
+    height: 1250px;
 }
 
 @media (max-width:1200px) {
@@ -142,6 +142,18 @@ a.nav-link:active {
     text-align: center;
 }
 
+.flex-containerInvRight {
+    width: 60vw;
+    height: 20vw;
+    display: flex;
+    flex-flow: row wrap;
+    justify-items: right;
+    align-items: flex-start;
+    text-align: center;
+
+}
+
+
 
 .flex-containerPurple {
     display: flex;
@@ -193,16 +205,43 @@ div {
     padding-left: 10px;
 }
 
+
+.mockUp {
+    margin-top: 2vw;
+    width: 30vw;
+    height: auto;
+    overflow: hidden;
+}
+
+.mockUp2 {
+    width: 30vw;
+    height: auto;
+    overflow: hidden;
+}
+
+.mockUp3 {
+    margin-top: 4vw;
+    width: 30vw;
+    height: auto;
+    overflow: hidden;
+}
+
+.mockUp4 {
+    margin-bottom: 2vw;
+    width: 30vw;
+    height: auto;
+    overflow: hidden;
+}
+
+
 .box {
-    width: 350px;
-    height: 250px;
-    max-width: 600px;
-    max-height: 350px;
-    min-width: 250px;
-    background-color: rgb(255, 255, 255);
+    width: 60vw;
+    height: 30vw;
+    border: 3px solid white;
     border-radius: 20px;
     margin: 30px;
     position: relative;
+    background-image: radial-gradient(rgba(19, 0, 106, 0), rgba(15, 77, 143, 0.233))
 }
 
 .boxes {
@@ -338,6 +377,7 @@ div {
 
 .grow:hover {
     transform: scale(1.1);
+
 }
 
 #title {
@@ -456,7 +496,7 @@ div {
     width: 85%;
     height: 3px;
     padding: 0px;
-    margin-bottom: 7%;
+    margin-bottom: 5%;
     background: #fff;
     margin-left: 7%;
 }
@@ -506,4 +546,22 @@ a.fill-div {
 
 #menu {
     background-image: radial-gradient(rgba(19, 0, 106, 0.626), rgb(15, 77, 143)), url("portAssets/Screen Shot 2022-12-06 at 2.08.15 PM.png");
+}
+
+.mockUpTextBox {
+    text-align: right;
+    justify-content: right;
+    width: 25vw;
+    height: 25vw;
+    margin-left: 3%;
+    margin-right: 3%;
+
+}
+
+#italics {
+    font-size: 14px;
+    font-style: italic;
+    margin: 5% 0% 5% 5%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
